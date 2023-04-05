@@ -1,0 +1,28 @@
+.home {
+    background-image: url("https://example.com/image.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    
+    .home h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .home p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    }

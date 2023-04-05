@@ -1,0 +1,107 @@
+
+
+:root {
+    --primary-color: #56636c;
+    --background-color: #c6bebe;
+    --font-size: 16px;
+    --line-height: 1.5;
+    --padding: 20px;
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 var(--padding);
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  button {
+    font-size: var(--font-size);
+    padding: 10px var(--padding);
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn {
+    font-size: var(--font-size);
+    padding: 10px var(--padding);
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-secondary {
+    background-color: #ccc;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 1.5em;
+  }
+  
+  p:first-of-type {
+    margin-top: 0;
+  }
+  
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  p.lead {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  figcaption {
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #888;
+  }
+
+.btn:hover,
+.btn:focus {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+.btn:active {
+  background-color: darken(var(--primary-color), 20%);
+}
+
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow: auto;
+    padding: 16px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 24px;
+  }
