@@ -36,6 +36,7 @@
     background-color: var(--primary-color);
     color: #fff;
     cursor: pointer;
+    border-radius: 0.3rem;
   }
   
   .btn {
@@ -108,7 +109,7 @@ p{
 
   /* NAV BAR  */
 
-  
+
   nav {
     background-color: #f2f2f2;
     padding: 1rem;
@@ -163,6 +164,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 0.3rem;
   }
   
   form label {
@@ -177,7 +179,7 @@ p{
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 20px;
-    width: 100%;
+    width: 300px;
   }
   
   form input[type="submit"] {

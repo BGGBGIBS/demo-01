@@ -3,7 +3,7 @@ import Products from '../../data/products/product.json'
 const ProductList = () => {
     return (
       <div className={style.productList}>
-        <h2>Product List</h2>
+        <h1>Products</h1>
         <ul className={style.productList}>
           {Products.map(product => (
             <li key={product.id} className={style.product}>
@@ -11,7 +11,7 @@ const ProductList = () => {
                 <img src={product.image} alt={product.name} className={style.productImage} />
                 {product.promo && (
                   <div className={style.productPromo}>
-                    <i className="fas fa-tags"></i>
+                    <i className={style.productPromo}>PROMO</i>
                   </div>
                 )}
               </div>

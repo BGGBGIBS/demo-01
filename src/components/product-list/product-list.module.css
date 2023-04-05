@@ -3,11 +3,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
+
   .product {
     width: calc(33.33% - 20px);
     margin-bottom: 40px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
+    background-color: rgb(244, 177, 152);
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
