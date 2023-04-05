@@ -1,4 +1,7 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+
 import Home from '../home/home';
 import ProductList from '../product-list/product-list';
 import Account from '../account/account';
@@ -20,17 +23,14 @@ function NavBar() {
         </ul>
       </nav>
 
-      <Switch>
-        <Route exact path="/">
-          <Home />
+      <Routes>
+        <Route exact path="/" element={<Home/>}>
         </Route>
-        <Route path="/products">
-          <ProductList />
+        <Route path="/products" element={<ProductList />}>
         </Route>
-        <Route path="/account">
-          <Account />
+        <Route path="/account" element={<Account />}>
         </Route>
-      </Switch>
+      </Routes>
     </Router>
   );
 }
