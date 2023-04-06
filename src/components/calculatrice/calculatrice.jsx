@@ -29,7 +29,7 @@ const Calculatrice = () => {
   }
 
   return (
-    <div>
+    <form>
       <label htmlFor="nombre1">Nombre 1 :</label>
       <input
         id="nombre1"
@@ -58,7 +58,7 @@ const Calculatrice = () => {
       <br />
       <label>Résultat :</label>
       <input type="text" value={resultat} readOnly />
-    </div>
+    </form>
   );
 }
 

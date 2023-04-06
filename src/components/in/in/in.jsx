@@ -1,20 +1,32 @@
 import React, { useState } from 'react';
+import style from './in.module.css';
 import Login from '../login/login';
 import Signin from '../signin/signin';
+
 
 function Authentication() {
   const [isNew, setIsNew] = useState(false);
 
-  function toggleIsNew() {
+  const toggleIsNew = () => {
     setIsNew(!isNew);
   }
 
   return (
+    <>
     <div>
-      <h2 onClick={toggleIsNew} className={isNew ? "active" : ""}>Log In</h2>
-      <h2 onClick={toggleIsNew} className={!isNew ? "active" : ""}>Sign In</h2>
+    <div className={'row'}>
+        <div className={isNew ? '' : 'active'} onClick={toggleIsNew}>
+        <h2>Log In</h2>
+        </div>
+        <div className={isNew ? 'active' : ''} onClick={toggleIsNew}>
+        <h2>Sign In</h2>
+        </div>
+    </div>
+    <div>
       {isNew ? <Signin /> : <Login />}
     </div>
+    </div>
+    </>
   );
 }
 
