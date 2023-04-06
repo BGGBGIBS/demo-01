@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Account = () => {
+const SignIn = () => {
   const [firstname, setFirstname] = useState('');
   const [lastname, setLastname] = useState('');
   const [email, setEmail] = useState('');
@@ -15,7 +15,7 @@ const Account = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1>Account</h1>
+      <h1>SignIn</h1>
 
       <label htmlFor="firstname">Firstname</label>
       <input type="text" id="firstname" value={firstname} onChange={(e) => setFirstname(e.target.value)} required />
@@ -41,4 +41,4 @@ const Account = () => {
   );
 };
 
-export default Account;
+export default SignIn;

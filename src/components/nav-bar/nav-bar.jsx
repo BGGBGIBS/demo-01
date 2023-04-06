@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 import Home from '../home/home';
 import ProductList from '../product-list/product-list';
-import Account from '../account/account';
+import Account from '../account/signin';
 import Calculatrice from '../calculatrice/calculatrice';
 
 function NavBar() {

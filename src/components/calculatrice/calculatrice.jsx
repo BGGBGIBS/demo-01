@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Calculatrice() {
+const Calculatrice = () => {
   const [nombre1, setNombre1] = useState("");
   const [nombre2, setNombre2] = useState("");
   const [operation, setOperation] = useState("+");
