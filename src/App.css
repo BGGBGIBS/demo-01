@@ -6,6 +6,7 @@
     --font-size: 16px;
     --line-height: 1.5;
     --padding: 20px;
+    text-align: center;
   }
   
   body {
@@ -107,6 +108,9 @@ p{
     margin-bottom: 24px;
   }
 
+
+
+  
   /* NAV BAR  */
 
 
@@ -139,6 +143,8 @@ p{
     font-weight: bold;
   }
 
+
+
   /* FOOTER  */
 
   .footer {
@@ -155,6 +161,9 @@ p{
     color: #555;
     margin: 0;
   }
+
+
+
 
 
 /* FORMULAIRES  */
