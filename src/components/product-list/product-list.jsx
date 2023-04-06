@@ -1,28 +1,27 @@
-import style from './product-list.module.css'
 import Products from '../../data/products/product.json'
 const ProductList = () => {
     return (
-      <div className={style.productList}>
+      <>
         <h1>Products</h1>
-        <ul className={style.productList}>
+        <ul className='productList'>
           {Products.map(product => (
-            <li key={product.id} className={style.product}>
-              <div className={style.productImageContainer}>
-                <img src={product.image} alt={product.name} className={style.productImage} />
+            <li key={product.id} className='product'>
+              <div className='productImageContainer'>
+                <img src={product.image} alt={product.name} className='productImage' />
                 {product.promo && (
-                  <div className={style.productPromo}>
-                    <i className={style.productPromo}>PROMO</i>
+                  <div className='productPromo'>
+                    <i className='productPromo'>PROMO</i>
                   </div>
                 )}
               </div>
-              <div className={style.productInfo}>
-                <h3 className={style.productName}>{product.name}</h3>
-                <p className={style.productPrice}>${product.price}</p>
+              <div className='productInfo'>
+                <h3 className='productName'>{product.name}</h3>
+                <p className='productPrice'>${product.price}</p>
               </div>
             </li>
           ))}
         </ul>
-      </div>
+      </>
     );
   };
   

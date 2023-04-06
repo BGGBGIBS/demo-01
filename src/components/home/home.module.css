@@ -2,7 +2,7 @@
     /* background-image: url("https://example.com/image.jpg"); */
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: calc(100vh - 115px);
     display: flex;
     justify-content: center;
     align-items: center;

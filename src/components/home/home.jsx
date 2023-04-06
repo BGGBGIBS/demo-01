@@ -7,7 +7,6 @@ const Home = () => {
     <div className={style.home}>
       <h1>Bienvenue sur MyShop</h1>
       <p>Votre Shop Universel</p>
-      {/* <img src="https://www.example.com/image.jpg" alt="Une image d'accueil" /> */}
     </div>
   );
 };
