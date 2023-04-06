@@ -15,8 +15,6 @@ const SignIn = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1>SignIn</h1>
-
       <label htmlFor="firstname">Firstname</label>
       <input type="text" id="firstname" value={firstname} onChange={(e) => setFirstname(e.target.value)} required />
 

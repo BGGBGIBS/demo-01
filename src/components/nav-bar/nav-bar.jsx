@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 import Home from '../home/home';
 import ProductList from '../product-list/product-list';
-import Account from '../account/signin';
+import In from '../in/in/in';
 import Calculatrice from '../calculatrice/calculatrice';
 
 function NavBar() {
@@ -22,7 +22,7 @@ function NavBar() {
             <Link to="/calculatrice">CALCULATRICE</Link>
           </li>
           <li>
-            <Link to="/account">ACCOUNT</Link>
+            <Link to="/in">In</Link>
           </li>
         </ul>
       </nav>
@@ -34,7 +34,7 @@ function NavBar() {
         </Route>
         <Route path="/calculatrice" element={<Calculatrice/>}>
         </Route>
-        <Route path="/account" element={<Account />}>
+        <Route path="/in" element={<In />}>
         </Route>
       </Routes>
     </Router>

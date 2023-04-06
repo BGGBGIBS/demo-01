@@ -10,16 +10,16 @@ const Calculatrice = () => {
     let resultatCalcul = 0;
     switch(operation) {
       case "+":
-        resultatCalcul = parseInt(nombre1) + parseInt(nombre2);
+        resultatCalcul = parseFloat(nombre1) + parseFloat(nombre2);
         break;
       case "-":
-        resultatCalcul = parseInt(nombre1) - parseInt(nombre2);
+        resultatCalcul = parseFloat(nombre1) - parseFloat(nombre2);
         break;
       case "*":
-        resultatCalcul = parseInt(nombre1) * parseInt(nombre2);
+        resultatCalcul = parseFloat(nombre1) * parseFloat(nombre2);
         break;
       case "/":
-        resultatCalcul = parseInt(nombre1) / parseInt(nombre2);
+        resultatCalcul = parseFloat(nombre1) / parseFloat(nombre2);
         break;
       default:
         setResultat("Erreur : opération invalide");
